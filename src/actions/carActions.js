@@ -1,13 +1,17 @@
-export const addFeature = feature => {
+export function addFeature(id) {
   return {
-      type: 'ADD_FEATURE',
-      payload: feature
-  }
+    type: "ADD_FEATURE",
+    payload: {
+      feature: id
+    }
+  };
 }
 
-export const removeFeature = feature => {
-  return{
-      type: 'REMOVE_FEATURE',
-      payload: feature
-  }
+export function removeFeature(id) {
+  return {
+    type: "REMOVE_FEATURE",
+    payload: {
+      feature: id
+    }
+  };
 }
